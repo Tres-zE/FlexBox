@@ -19,6 +19,25 @@
     width: 23%;
 }
 
+/*para la secion del video*/
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video{
+    flex-wrap: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-wrap: 2;
+}
+
 /*PARA LE FOOTER*/
 .rodapePrincipal-navMap-list{
     display: flex;
@@ -47,4 +66,52 @@
 
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;/*para que el enviar este a la derecha*/
+}
+
+/*PARA HACER RESPONSIVA LA PAGINA*/
+
+@media(max-width: 768px){
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;/*para que el titulo Nuestra APP quede primero pero solo cuando sea responsivo*/
+    }
 }
