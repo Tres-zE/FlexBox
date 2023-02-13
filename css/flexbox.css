@@ -1,0 +1,50 @@
+.headerPrincipal .container{
+    display: flex;/*para que sea flexible*/
+    align-items: center;/*para que los elementos esten centrados*/
+    justify-content: space-between;/*para que haya un espacio entre ellos entre elementos*/
+}
+
+.headerPrincipal-nav{
+    display: flex;
+}
+
+/*PARA LOS CURSOS*/
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+
+/*PARA LE FOOTER*/
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;/*para que esten los elementos uno debnajo del otro*/
+    height: 250px;/*altura de las colunmas-elementos*/
+    flex-wrap: wrap;/*cuando un elemento llega a los 250px se quiebra y pasa los siguentes(columna)*/ 
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    /*para que los patrocinadores esten separados del imput enviar*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*espacio alrededor de los elementos*/
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;/*ocupa el espacio restante*/
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;/*para que el enviar este a la derecha*/
+}
