@@ -32,6 +32,7 @@
 
 .videoSobre-video{
     flex-wrap: 2;
+    flex-shrink: 2;/*para que se ajuste el contenido*/
 }
 
 .videoSobre-sobre-list{
@@ -41,7 +42,7 @@
 /*PARA LE FOOTER*/
 .rodapePrincipal-navMap-list{
     display: flex;
-    flex-direction: column;/*para que esten los elementos uno debnajo del otro*/
+    flex-direction: column;/*para que esten los elementos uno debajo del otro*/
     height: 250px;/*altura de las colunmas-elementos*/
     flex-wrap: wrap;/*cuando un elemento llega a los 250px se quiebra y pasa los siguentes(columna)*/ 
 }
@@ -72,7 +73,7 @@
 
 @media(max-width: 768px){
     .headerPrincipal .container{
-        flex-direction: column;
+        flex-direction: column;/*Para móvil debemos poner un elemento debajo del otro, es la mejor manera de ocupar todo el espacio para mejorar la usabilidad en móvil*/
         align-items: initial;
         text-align: center;
     }
@@ -113,5 +114,9 @@
 
     .headerPrincipal-nav-link-app{
         order: -1;/*para que el titulo Nuestra APP quede primero pero solo cuando sea responsivo*/
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
     }
 }
